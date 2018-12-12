@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
   var id = req.query.id;
   
   if(id == "nome" || id == "email" || id == "ddd"  ){
-	  var s = 'SELECT '+ id +' FROM clientes';
+	  var s = 'SELECT '+ id +' FROM tabela';
   
 	  con.query(s, function (err, result) {
         if (err) throw err;
